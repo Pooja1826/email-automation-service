@@ -1,6 +1,10 @@
 package com.email.automation.service;
 
+import com.email.automation.dto.ScheduleEmailRequest;
+
 public interface EmailAutomationService {
 
-    public void sendEmail(String to, String subject, String body);
+    void sendEmail(String to, String subject, String body);
+
+    void scheduleEmail(ScheduleEmailRequest scheduledEmail);
 }

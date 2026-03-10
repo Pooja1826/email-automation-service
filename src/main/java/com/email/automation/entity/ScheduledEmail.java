@@ -26,4 +26,7 @@ public class ScheduledEmail {
     private String body;
     private LocalDateTime scheduledTime;
     private String status;
+    private Integer retryCount;
+    private Integer maxRetry;
+    private LocalDateTime lastAttemptTime;
 }
